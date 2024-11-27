@@ -1,0 +1,41 @@
+Program: 9 Determine the grade of a student based on their marks using the conditional 
+(ternary) operator. Take student’s marks as input and display the corresponding 
+grade as output according to the following criteria: 
+ Marks >= 90: Grade A 
+ Marks >= 80 and < 90: Grade B 
+ Marks >= 70 and < 80: Grade C 
+ Marks >= 60 and < 70: Grade D 
+ Marks < 60: Grade F 
+Validate the input by ensuring user is entering marks between 0-100, else declare 
+that the entered input is invalid. 
+Code: //Practical 8: Program For Giving Grade Using Users Marks 
+ 
+#include<stdio.h> 
+void main() 
+{   
+    int marks; 
+     
+    // Taking Marks From User 
+    printf("Enter Your Marks="); 
+    scanf("%d",&marks); 
+     
+    // Grades Giving System 
+    if(marks>=90&marks<=100) 
+    { 
+        printf("A Grade\n"); 
+    } 
+    else if(marks>=80&marks<90)
+     printf("B Grade\n"); 
+    else if(marks>=70&marks<80) 
+        printf("C Grade\n"); 
+    else if(marks>=60&marks<70) 
+        printf("D Grade\n"); 
+    else if(marks<60&marks>=0) 
+        printf("F Grade\n"); 
+    else if(marks<=0) 
+        printf("Please Enter Valid Marks\n\n\n"); 
+    else if(marks>100) 
+        printf("Please Enter Valid Marks\n\n\n"); 
+printf("24CE032_TARANG\n\n");
+}
+   
